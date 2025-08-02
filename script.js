@@ -23,6 +23,20 @@ document.querySelectorAll('section').forEach(section => {
 let currentImageIndex = 0;
 const galleryItems = document.querySelectorAll('.gallery-images img');
 
+// Preload images for better performance
+function preloadImages() {
+    galleryItems.forEach((img, index) => {
+        if (index > 0) { // Skip first image as it's already loaded
+            const imageUrl = img.src;
+            const preloadImg = new Image();
+            preloadImg.src = imageUrl;
+        }
+    });
+}
+
+// Call preload after page loads
+document.addEventListener('DOMContentLoaded', preloadImages);
+
 function showImage(index) {
     galleryItems.forEach(item => item.classList.remove('active'));
     currentImageIndex = (index + galleryItems.length) % galleryItems.length;

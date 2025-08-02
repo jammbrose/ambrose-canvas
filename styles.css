@@ -442,6 +442,10 @@ h2::after {
     opacity: 0;
     transition: opacity 0.8s ease;
     border-radius: 15px;
+    /* Optimize image loading */
+    image-rendering: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .gallery-images img.active {
@@ -684,34 +688,210 @@ textarea {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Navigation */
     .nav {
+        padding: 0.8rem 1rem;
         flex-direction: column;
-        padding: 1rem;
+        gap: 1rem;
     }
-
+    
+    .nav-logo {
+        font-size: 1.5rem;
+    }
+    
     .nav-links {
-        margin-top: 1rem;
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 0;
     }
-
+    
     .nav-links a {
-        margin: 0 1rem;
-        font-size: 0.9rem;
+        margin-left: 0;
+        font-size: 1rem;
     }
-
+    
+    /* Hero Section */
+    .hero {
+        height: 100vh;
+        padding: 0 1rem;
+        background-attachment: scroll; /* Better mobile performance */
+    }
+    
+    .hero-content {
+        padding: 1.5rem;
+    }
+    
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
     }
-
+    
     .hero .tagline {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        line-height: 1.4;
     }
-
+    
+    /* Sections */
     section {
         padding: 3rem 1rem;
     }
-
+    
+    h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* About Section */
+    .about-content p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-highlights {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .highlight {
+        padding: 1.5rem;
+    }
+    
+    /* Services */
     .services-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .service-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .service-icon {
+        font-size: 3rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .service-card p {
+        font-size: 1rem;
+    }
+    
+    /* Gallery */
+    .gallery-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .gallery-images {
+        height: 400px; /* Shorter on mobile */
+    }
+    
+    .gallery-nav {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .prev { left: 10px; }
+    .next { right: 10px; }
+    
+    /* Contact Section */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .contact-item {
+        padding: 1.5rem;
+    }
+    
+    .cta-section {
+        position: static; /* Remove sticky on mobile */
+        padding: 2rem;
+    }
+    
+    /* Modal */
+    .modal-content {
+        width: 95%;
+        margin: 20px auto;
+        padding: 2rem;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .close-modal {
+        right: 1rem;
+        top: 1rem;
+        width: 35px;
+        height: 35px;
+        font-size: 2rem;
+    }
+    
+    /* Form */
+    input, textarea {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    .cta-button, .submit-button {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+    
+    .cta-button.large {
+        padding: 1.2rem 2.5rem;
+        font-size: 1.2rem;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero .tagline {
+        font-size: 1.1rem;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+    
+    .gallery-images {
+        height: 300px;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .contact-item {
+        padding: 1.2rem;
+    }
+    
+    .modal-content {
+        padding: 1.5rem;
     }
 }
 
