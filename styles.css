@@ -35,6 +35,7 @@ body {
         linear-gradient(45deg, rgba(139, 105, 20, 0.02) 25%, transparent 25%),
         linear-gradient(-45deg, rgba(139, 105, 20, 0.02) 25%, transparent 25%);
     background-size: 60px 60px, 80px 80px, 40px 40px, 40px 40px;
+    text-align: center;
 }
 
 /* Navigation */
@@ -184,6 +185,9 @@ body {
 section {
     padding: 5rem 2rem;
     position: relative;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 section:nth-child(even) {
@@ -292,6 +296,7 @@ h2::after {
     margin-bottom: 0.5rem;
     padding-left: 1.2rem;
     position: relative;
+    text-align: left;
 }
 
 .service-features li::before {
@@ -380,6 +385,7 @@ h2::after {
     color: var(--storm-gray);
     line-height: 1.7;
     margin: 0;
+    text-align: left;
 }
 
 .contact-item strong {
@@ -572,6 +578,7 @@ input, textarea {
     color: var(--text-color);
     transition: var(--transition);
     box-shadow: inset 0 2px 4px rgba(139, 105, 20, 0.1);
+    text-align: left;
 }
 
 input:focus, textarea:focus {
