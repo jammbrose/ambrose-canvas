@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambrose Canvas - Marine Canvas Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">Ambrose Canvas</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Ambrose Canvas</h1>
+            <p class="tagline fade-in">Crafting Quality Covers, Navigating New Horizons</p>
+            <button class="cta-button" onclick="openQuoteModal()">Request a Quote</button>
+        </div>
+        <div class="wave-animation"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Ambrose Canvas</h2>
+        <div class="about-content">
+            <p>Located in the heart of Maine's lobster coast, Ambrose Canvas is your trusted partner for professional marine canvas and upholstery solutions. Under the skilled hands of Kegan Ambrose, we combine traditional craftsmanship with modern marine-grade materials to protect your investment.</p>
+            
+            <p>From custom boat covers that withstand Maine's harsh coastal weather to precision-fitted bimini tops for exploring Down East waters, we understand that your vessel deserves protection as reliable as the Maine coast itself. Every project reflects our commitment to quality and durability.</p>
+            
+            <div class="about-highlights">
+                <div class="highlight">
+                    <h3>Expert Craftsmanship</h3>
+                    <p>Designed and fabricated by Kegan Ambrose in Stonington, Maine</p>
+                </div>
+                <div class="highlight">
+                    <h3>Premium Materials</h3>
+                    <p>Sunbrella, Stamoid, and marine-grade hardware exclusively</p>
+                </div>
+                <div class="highlight">
+                    <h3>Maine Coast Focused</h3>
+                    <p>Built for the demands of Down East Maine waters</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">⚓</div>
+                <h3>Custom Boat Covers</h3>
+                <p>Hand-measured mooring covers, cockpit covers, and winter storage protection. Features reinforced stress points, drainage grommets, and secure tie-down systems for Maine's challenging coastal conditions.</p>
+                <ul class="service-features">
+                    <li>Sunbrella Marine Grade fabrics</li>
+                    <li>5-year fade warranty</li>
+                    <li>Custom fit guarantee</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">☀️</div>
+                <h3>Bimini Tops & Dodgers</h3>
+                <p>Professional shade and weather protection systems. From classic 3-bow biminis to full dodgers with clear vinyl windows and ventilation panels.</p>
+                <ul class="service-features">
+                    <li>Stainless steel framework</li>
+                    <li>Easy-release mechanisms</li>
+                    <li>Storage boot included</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛥️</div>
+                <h3>Enclosures & Windscreens</h3>
+                <p>Complete cockpit enclosures, bridge enclosures, and windscreen systems. Crystal-clear Strataglass windows with proper ventilation design.</p>
+                <ul class="service-features">
+                    <li>Strataglass clarity guarantee</li>
+                    <li>Removable window panels</li>
+                    <li>Mosquito netting options</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Sail Repair & Canvas Services</h3>
+                <p>Expert repairs, re-cuts, and modifications. From simple tear repairs to complete sail reconstruction and canvas restoration services.</p>
+                <ul class="service-features">
+                    <li>Same-day emergency repairs</li>
+                    <li>Pick-up and delivery available</li>
+                    <li>Winter storage programs</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎯</div>
+                <h3>Custom Upholstery</h3>
+                <p>Marine-grade cushions, seating, and interior soft goods. UV-resistant materials designed for the marine environment.</p>
+                <ul class="service-features">
+                    <li>Closed-cell foam cores</li>
+                    <li>Mildew-resistant fabrics</li>
+                    <li>Quick-dry construction</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏭</div>
+                <h3>Commercial Marine</h3>
+                <p>Heavy-duty solutions for commercial vessels, fishing boats, and working craft. Built to withstand the demands of commercial marine operations.</p>
+                <ul class="service-features">
+                    <li>Industrial-grade materials</li>
+                    <li>Fleet maintenance programs</li>
+                    <li>Emergency service calls</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Our Work</h2>
+        <div class="gallery-container">
+            <button class="gallery-nav prev" onclick="prevImage()">❮</button>
+            <div class="gallery-images">
+                <img src="./images/Screenshot from 2025-08-02 16-10-31.png" alt="Custom Marine Enclosure - Maine Harbor" class="active">
+                <img src="./images/Screenshot from 2025-08-02 16-09-08.png" alt="Custom Marine Canvas with Professional Snaps">
+                <img src="./images/Screenshot from 2025-08-02 16-10-07.png" alt="Custom Boat Interior Cushions - Blue Marine Vinyl">
+                <img src="./images/Screenshot from 2025-08-02 16-10-55.png" alt="Custom Window Seat Cushions - Marine Grade">
+                <img src="./images/Screenshot from 2025-08-02 16-09-41.png" alt="Custom Canvas Hammock - Outdoor Marine Fabric">
+            </div>
+            <button class="gallery-nav next" onclick="nextImage()">❯</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📍 Workshop Location</h3>
+                    <p>Stonington, Maine 04681<br>
+                    Located in the heart of Deer Isle<br>
+                    Serving Down East Maine waters</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📞 Contact Information</h3>
+                    <p><strong>Phone:</strong> (207) 367-SAIL<br>
+                    <strong>Email:</strong> kegan@ambrosecanvas.com<br>
+                    <strong>Instagram:</strong> @ambrose.canvas</p>
+                </div>
+                <div class="contact-item">
+                    <h3>🕒 Workshop Hours</h3>
+                    <p><strong>Monday - Friday:</strong> 7:00 AM - 5:00 PM<br>
+                    <strong>Saturday:</strong> 8:00 AM - 2:00 PM<br>
+                    <strong>Sunday:</strong> By appointment</p>
+                </div>
+                <div class="contact-item">
+                    <h3>⚓ Service Areas</h3>
+                    <p>Stonington • Deer Isle • Bar Harbor<br>
+                    Southwest Harbor • Northeast Harbor<br>
+                    <em>Mobile service to area harbors</em></p>
+                </div>
+            </div>
+            <div class="cta-section">
+                <h3>Ready to Protect Your Investment?</h3>
+                <p>Get a free estimate for your marine canvas project. We provide detailed quotes with material specifications and timeline.</p>
+                <button class="cta-button large" onclick="openQuoteModal()">Request a Free Quote</button>
+                <p class="guarantee">✓ Free estimates • ✓ Same-day quotes • ✓ 5-year warranty</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Modal -->
+    <div id="quoteModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeQuoteModal()">&times;</span>
+            <h2>Request a Quote</h2>
+            <form id="quoteForm" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Project Description:</label>
+                    <textarea id="description" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Ambrose Canvas. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
